@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <a-scene embedded
+      arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+     <a-marker preset="hiro">
+                <a-image rotation="-90 0 0" position="0 0 0" src="vistaMacho.png"></a-image>
+                <a-sphere position="0 0 0" radius="0.25" color="blue"> </a-sphere>
+            </a-marker>   
+                <a-marker preset="custom" type="pattern" url="pattern-GarrapMarker.patt">
+                    <a-image rotation="-90 0 0" position="0 0 0" src="vistaHembra.png"></a-image>
+                    <a-sphere position="0 0 0" radius="0.25" color="yellow"> </a-sphere>
+            </a-marker>
+     
+    </a-scene>
+   
+  </body>
+
+</html>
